@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>首页</title>
+	<link rel="stylesheet" href="./assets/mui/css/mui.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<style>
+		.mui-content{
+			background-color:#fff;
+			padding:0px 10px;
+		}
+		.index{
+			width:27px;
+			height:27px;
+			background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAAAclBMVEVHcEy3uf+4uf+4uf+4uP+iov+3uf+oq/+4uf+np/+3uP+5uf+4uf9tb/+4uP+4uf9tb/9tb/+4uf9tb/9tcP+4uf+4uf9tcP9ub/+4uf+3uf9tcP9sbv9tcP9tb/9tb/+3uP/////Y2P9/gf+ho//x8v9mZ8jzAAAAH3RSTlMAMeTbbSKaDOwEwEP491WOeeKIklOgsMm6p2NsNKGnm++i2QAAAkRJREFUSMetVomSgyAM9QLEo9Wq1Xbb1Wr7/7+4iScgaMfZdKaD4iPhvRBiWRqzPRq4UdNEbkA92/rKQuo3kvk03MPwu9tozL3zLdTJGda/eSFhnDMSerfBt3MygkjQY864Gz7+cKfnHhkQgyucdTy2nmEeRuFrHV5gJrow/ZLsAsQ2lzUXBe58g2wbuSpUZii8vLItutgVPqHrCCnfEYeqcZ7WC+kMcQIvBDi88n0Yhzj9RQfQy2XfJB4DXgIhxOjLhLWjOUzm6BQxGHDnDIF588iyqrRK8vFBGzb68PqROw2QnLSu67h6lmmMg7TMcgUNTtz+fAE7y1Reqxb/PiR3wHo4iHEWXmfj113Tfl6f9o3jX9HjeZAY0CKNk7u2fXdd924/HTykwqGxIbrpf7FSifHd1grOQT+wxZuA+qn1Vi5JdEMKqcCjZT3i+vXS4hKRywITaylMOdBugMUTLTzEBAPVprjJE+cNsPpn1haVAyLZHOCWlbNySCIcIaPSss3iQeYLsGQHNiULR1g0B5ntwHIxyIWSagc2csJ7ShYB0h3YpFwvQDHLnaVfeRvkFpKL5+UW7Ckml5zK+ZbHTEhl5eAQs8N42N3oRzmmzIgj0jGViwL4izdDnIqCVILMsqdMLkFSwTMmWfxQC55aXidYnFZZUimiLeVVLeYDLCPiscjWxVy9OhIxlVhPUMU1V8fRi+rgtXj0Ej565R9tMA62M4ebJ7lVE8PbbtXA7ubG8P7/bejRpndwObbYke8GhWfrHP0B7xaCqP3jGqMAAAAASUVORK5CYII=") no-repeat;
+			background-size:27px 27px;
+			display: inline-block;
+			position: absolute;
+			top:3px;
+		}
+		.xin{
+			width:27px;
+			height:27px;
+			background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAAAPFBMVEVHcEzAwMDMzMzMzMzMzMzMzMzNzc3Ly8u8vLzCwsLNzc3MzMyZmZmZmZmZmZnBwcGZmZmZmZmZmZmZmZlRAqCPAAAAE3RSTlMAG0UyeFJggAQOKG/Dpmdhg987WUPTyAAAAgNJREFUSMedVlmyhDAIzGIcYjTlcv+7vpBFiVn0ycdUObFD0yDAWMW4FKMZnJlRSM7eGHA1/DIz6hEJ0vwqZiT0UDI6Qm5aa45sI3Bqgnh4RU3Z1TCpcJXuuBpE5VQLf1R1KLynxpXaexSlFvj/0JFsQocKKqgW++gQI1clQwUPyRnvPOULlDPEEV244z3CiwpyuEHTW4x+U3ka76cU3xUsmy6aMBQKtc0pbiBUb0aY7XZd7Z6i8U88pyn9iaGy2u3wNiMQsqczVSbSPZ3Bcpy2AJ+vp/V0F4VQJDKCci42+rSS6FQQJGlj/dt2n4+K7ZeYg0u1+42Z1uHWfd1qsDkF4lnKK4HWHy5Hw/hVHBKpChLZbluow15aCsSm6sSQoOnsFMXzG67CQpjdHmEcM+dguiZ/mySKyJwuQCTp2H4lnMKAd1EbozBCss/SMkqSSMJ0W48z21GSkbYH3sTNmjaekaYbw2vgZsi6nECsYk84igrFRUq5yXOhL4RSJh9OS5cMFT+c7DMNuLmHSu9PeQcqcDdUagp5CypwSznPTMrDzR2DuWgh94ZXba/ps1ub7bXezANu7TRzP0iK0YE42x0djUG184dB9XIswm0sfh3CX0d+XDCmfy4YX9eZdN+/lycG+tOqRrZJXAz528Xw8xrqS6ZYesXL7cOv2G7HNrhiV0P6A/rOPLr5gKZaAAAAAElFTkSuQmCC") no-repeat;
+			background-size:27px 27px;
+			display: inline-block;
+			position: absolute;
+			top:3px;
+		}
+		.us{
+			width:27px;
+			height:27px;
+			background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAAAclBMVEVHcEyamprl5eXl5eXm5ubKysrl5eX39/fW1tbl5eXl5eWZmZnm5ubl5eXn5+fm5ubm5ubl5eWZmZmZmZmZmZnl5eXl5eXl5eXm5uaZmZmZmZmZmZmZmZnm5uaZmZmZmZmZmZmZmZnl5eWZmZm4uLj4+PiuaSaZAAAAInRSTlMAMzHrbQfjAQ+a2r8jwENV8aX07K6wh4qO/NaCimOXV3nhSlaF5gAAAoNJREFUSMetVoeSozAMtQlGBhI2lBTCpiyw//+LJ2MSJBvIXeY0EyaUZ0lPVQhfIAjjXbRv2320i8MAxN9IFm9aJps4e4dU16SdkeSq1lBfkT0/D7OtVkpvszC3uqOvRdB2N2DO6A0YEfYSnAfkbrugam9ODbXwPNGhsWI/pxCO5siTnj9Sn8zbo3cg5MbzYNntwHCVOziI8eFBr9GlD/hJzHFH/5Hvhjn6yNgwKPaNvF2K4nKT7KHBEV62yOGB6pJpN0pKgYB27qc4YLwS6pcsn6iuLilOIy+75xnGRMKh0hMKpaQHBpOZCmN5oi6kHZPK4S6y+RniP2Zi5wgzE3WEg43J+Ocp3y6soW9RSWLYyzB7aVlA6sJSVlqY15kNxplF58eFXdjr8xBi2DAa38IAydyAsNcVIh0jBURGD7qY88cDJW2Pl74dYN88N3NDYezwOAag/+17/HkBsFzGJrEyrs1S2be/Iyp1CiEzCYaWuk1CFtSzQrotByMnMPnd6gSK81BCI4kCc9MvSHl5kS/9jmQgHgz0rWzgXmEZlNUdmvLbsUZh0flG3ouRc6XGBC3vvpEOJaqyxj3sbWPvbiRpYaCEB0ClXU1wj1fNEdwQABpugIqUi1INqdUXMTCEmyVXQwNW1/TuwZOLpDLIuluUWrJUJoXjF+hcHYx6pjK9d6siaZmSplCtwyrWFKYWVK/DStaCpob3Blawhje111VGunrg5PRqr+LZzHmdecokb+bT6JBpsaxLOqNjZlAtDUY+qGbG4qw4Y/HTIfzpyP9wwUCcXVgWVjJllx1YW57EPyxPfFVjI2Z9VcMvrsuL4RX++xo6TIYPll6r8rlib5KlFfsPMpSMbONjIQUAAAAASUVORK5CYII=") no-repeat;
+			background-size:27px 27px;
+			display: inline-block;
+			position: absolute;
+			top:3px;
+		}
+		.mui-content .broadcast {
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			overflow: hidden;
+			background-color: #B6B7FF;
+			margin-top: 2%;
+			border-radius: 20px;
+		}
+		.mui-content .broadcast ul{
+			display: -webkit-flex;
+			-webkit-flex-direction:column;
+		}
+		.mui-content .broadcast .mui-pull-left {
+			width: 22px;
+			height: 21px;
+			margin-left: 15px;
+			margin-top: 3%;
+			background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAACcklEQVRIS7WWS4iNYRjHf39K5FIWFookshBZUhRZkVJIg2ws3MqUTC4lGZtxWRAZMaVEWSBZ2FkoSkRDNC6h5LYZsyC5jMtfz/Se6XN853yn45x3+b7P+/7e5/6IOpbtA8BmoF3SkaInbM8DDgP3VCScPbcd8nFxa2Z/lqSHld6xfQjYns57awYm2AlgE/ANGJ4eWSbpShVgG3AQOAnsrQlYBvsNLAdKkCJgMMZLeh+fKgTaHgocT5rFnXWSzth2LRqWa14VmGBngTXpYpuk8CH/BbQ9GZiU44cNwOq03yFpd0mmbqDtVuBogXm7JG0si9i/TGo7gqhfUvi44pLtz8DIKjIXQ0tJvyoBgdvAU+Btkn1U6b0Aln66DbieI/hYUn/5ftakwA2gO7nlEzBf0oM8aBZYNbyrASMPbYeVzgNLk7YzJf38J0rrdX7ePdujgZfAOGClpEtNBaZ0OQVEdHdK2mJ7MTA7gfsaZtJMurRHCQMuSGqxfRVYks6/NwN4Dlgb1UlSq+1FwJwE/NBQoO1RwGtgLLBC0uWm+dD2MCDKYAvwHJjetCgFbgE3gWnAF2CBpLuV8vAjMAboTcLlclFDuwoS/z7wBHiWuklu0g+0J9sxKkT7GVKhHEVtXCUpStzgKs9D2yMkfa1WRweAKXcmAlNyhEvd4keEtqRrmfBvSj8MrTtT8w3fLJR0J32y8cD0cFihNMv0pcLcU29JLBwxcqDvgLnAq2TeWmaaCZLeDPqwyNEZaGlEfAFMrRG4A+gATgN7atKwLDpjCN6Z2ZshqafSp23vB3YNlrZatMvJwYCuB/ZJOlb0hu3oFjGhd/8BP3RiCQBVOb8AAAAASUVORK5CYII=") no-repeat;
+			background-size: 22px 21px;
+			display: block;
+		}
+		.mui-content .broadcast li {
+			margin-left: 11px;
+			color: #fff;
+			display: inline-block;
+			font-size: 0.333333rem;
+		}
+		.sx{
+			width:100%;
+			font-size: 15px;
+			color:#333333;
+			margin-top: 12px;
+			font-family: '宋体';
+		}
+		.screen{
+			width:20px;
+			height:20px;
+			background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAMAAACfvvDEAAAAZlBMVEVHcExq4Kk73sRU4LRa37M+3sJ64KBi365i3q9o4KtN37p74J9D3sA43sZ64aB84J9k361F375m4Kx84J5B38A73sRi361S37ZN37pd37BH37xX37N04KNm36sz3sh44KFv4KZq4KghcGFoAAAAE3RSTlMAhJ4KcMftWB5FNbmF3J7Z4u218uiYqAAAAWRJREFUOMuN1OEaQyAUBmAhZIYZQ4jd/01ORUpH08897746X1ueBy6SF1GRJ96/RYq3XPEf93irZaWS6vP5TGWFEMqjcZ7nXeYnmA1936/0+/0uyziOh4wCA8btMHDJ6cKpFpoaErcbnSYVOkMzBV0LUOigSddxCdPHSTqosTvdKFgA0emLdsdRzwUY22Oq03MBeqhPr6goX7vRrKbUMZVGs9pNi0STB4UKKPbbfwp5o4C4aSwKF4Cb2klV6Bp5hF5NFYlItlFXAVymjDEr1SqA7+5vsnEVIH7QT3ZJj/0RPyaTq3EUEMm/iHTMUQDabgirULiASl16zK5SeQFTqD8LzEw1jmo+TAQfqbVJrRcsIJmPG6urlpdDUGq9camvh6604mOsUwFvY/o0CuBTox6miU4z8eX+D13lSxYZil8ARPFO9yZDcQEADeRc1FefSEqAdz71XzXW70bQ0ruzBPXu0bIMf2whZVZkHYu1AAAAAElFTkSuQmCC") no-repeat;
+			background-size: 20px 20px;
+			display: inline-block;
+		}
+		.screen1{
+			width:20px;
+			height:20px;
+			background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAArCAMAAAAniNp/AAAAgVBMVEVHcEz/fhT/rUr/cQL/eQz/bgD/jCb/ih3/kCr/rE3/uFn/ulv/s1T/tVX/eAj/ihz/uFr/tVb/qkf/cAD/uFr/tVX/pkH/t1f/oj3/bQD/uVv/eQX/tFX/lSv/jyT/dAH/r07/cAD/fQr/q0j/hxj/pkP/oz7/mjP/nzj/gxL/gA0BpBsIAAAAGXRSTlMAVUHYd/MP/i8ho+18bKTkx1PFvo3qtt7w5FmASgAAAahJREFUOMuF1NuygiAUBuClAlqeUpvaoJWZZfr+D7g5qhkaM100fS1+FgeA5SDREX6NLGTxL3NkjLm/TMVRsG3iquJqt2mCuhZqG+W1UON07mFvWdjzIUvp4BljkaXQ8yFVJr/tQmZpRvB6KaX+v+fr/G5r9NZKJeGF2OELnbr36yliyZ8CxpZ9RfyTdm+tZMskmpdCvkAXqfiEro7ERzYap295by6XrlOxRPKzQiExhyPtW0dUMirnDRD7I4ZpVTIMfQJwvSrFYxGxiwrpTQrKZuhTAF8qGT6GU2WUakhRCuVCOqlcb/VYKriVQiXg+2ZC3XmtRKnkxlXT9MRvV9QOCL4pxZc4KdnTWqMInPtdqaEflem8LnWAhApVauVPapowBI9SVUorS6wQMDWq4aq1KqACmViDPbysRLfDy0xarYY/Q0GV2gi/B0Tnyho+hsCg9fB8h4ulWobPxdmlM2ULL29MQelW+JO6z9goagn/p9+YjwmX4cfriehqeGe6nA62h58bftA9W/h08XoShJed99H3E0aQN4/lIbLysKLEwxh7XoI+JvoH+dVyvvt4e20AAAAASUVORK5CYII=") no-repeat;
+			background-size: 20px 20px;
+			display: inline-block;
+		}
+		.sx p{
+			margin-left: 5px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div class="loading">
+		<div class="pic"></div>
+	</div>
+	<!-- 底部导航 -->
+	<nav class="mui-bar mui-bar-tab my-footer">
+		<a class="mui-tab-item active" href="index.html">
+			<span class="index"></span>
+			<span class="mui-tab-label pra color">旅游</span>
+		</a>
+		<a class="mui-tab-item" href="new.html">
+			<span class="xin"></span>
+			<span class="mui-tab-label pra" style="right:36%;">消息</span>
+		</a>
+		<a class="mui-tab-item first" href="our.html">
+			<span class="us"></span>
+			<span class="mui-tab-label pra">我的</span>
+		</a>
+	</nav>
+	<!-- /底部导航 -->
+	<div class="mui-content">
+	<header>旅游</header>
+	<!-- banner -->
+    <div id="slider" class="mui-slider">
+		<div class="mui-slider-group mui-slider-loop">
+			<div class="mui-slider-item">
+				<a href="javascript:;"><img src="./images/banner2.png" /></a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="javascript:;"><img src="./images/banner.png" /></a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="my-star.html"><img src="./images/banner2.png" /></a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="javascript:;"><img src="./images/banner.png" /></a>
+			</div>
+		</div>
+		<div class="mui-slider-indicator indicator">
+		    <div class="mui-indicator mui-active"></div>
+		    <div class="mui-indicator"></div>
+		</div>
+	</div>
+ 	<!-- banner over -->
+	<!--broadcast-->
+		<div class="broadcast">
+			<a href="javascript:;" class="mui-pull-left"></a>
+			<ul id="box">
+			</ul>
+		</div>
+	<div class="sx pb"><i class="screen1"></i><p>热门推荐<br></p></div>
+	<!-- hot -->
+	</div>
+	<div>
+		<ul class="mui-table-view mui-grid-view mui-grid-9">
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			<a href="#">
+				<span class="mui-icon mui-icon-home"></span>
+				<div class="mui-media-body">景点</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			<a href="#">
+				<span class="mui-icon mui-icon-chatboxes"></span>
+				<div class="mui-media-body">信息</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			<a href="#">
+				<span class="mui-icon mui-icon-chatbubble"></span>
+				<div class="mui-media-body">聊天</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			<a href="#">
+				<span class="mui-icon mui-icon-location"></span>
+				<div class="mui-media-body">位置</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			<a href="#">
+				<span class="mui-icon mui-icon-search"></span>
+				<div class="mui-media-body">搜索</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			<a href="#">
+				<span class="mui-icon mui-icon-phone"></span>
+				<div class="mui-media-body">电话</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			<a href="#">
+				<span class="mui-icon mui-icon-map"></span>
+				<div class="mui-media-body">地图</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			<a href="#">
+				<span class="mui-icon mui-icon-camera"></span>
+				<div class="mui-media-body">照相</div>
+			</a>
+		</li>
+			</ul>
+	</div>
+	<ul class="mui-table-view">
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-object mui-pull-left" src="assets/webuploader/examples/image-upload/success.png">
+				<div class="mui-media-body">
+					幸福
+					<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-object mui-pull-left" src="assets/webuploader/_draft/music/success.png">
+				<div class="mui-media-body">
+					木屋
+					<p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-object mui-pull-left" src="assets/webuploader/_draft/music/success.png">
+				<div class="mui-media-body">
+				    CBD
+					<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>window.jQuery || document.write(unescape("%3Cscript src='assets/jquery.min.js'%3E%3C/script%3E"))</script>
+<script src="assets/mui/js/mui.min.js"></script>
+<script src="assets/flexible/flexible.js"></script>
+<script type="text/javascript">
+// 不可改动
+$(function(){$("body").on("tap","a",function(){location.href=$(this).attr("href")});$("a").on("tap",function(){$(this).addClass("active").siblings("li").removeClass("active")})});
+mui.init({
+    swipeBack:true //启用右滑关闭功能
+});
+var slider = mui("#slider");
+slider.slider({
+    interval: 2000//自动轮播周期，若为0则不自动播放，默认为0；
+});
+$.ajax({
+	url:'http://192.168.10.166:3000/list',
+	type:'get',
+	success:function(data){
+		// console.log(data)
+		var str ='';
+		$.each(data, function(k,v){
+			str +="<li>"+v.id+"</li>";
+		});
+		$("#box").html(str);
+		setInterval('AutoScroll(".broadcast")', 2000);
+	 }
+})
+// 文字滚动
+function AutoScroll(obj) {
+	$(obj).find('ul:first').animate({
+		marginTop: "-40px"
+	}, 1000, function () {
+		$(this).css({ marginTop: "0px" }).find("li:first").appendTo(this);
+	});
+}
+// 不可改动
+document.onreadystatechange = function(){
+	if(document.readyState =="complete"){
+		$(".loading").fadeOut();
+	}
+}
+// 事件委托
+$(".partition").on('click',function(){
+	location.href="list.html"
+})
+
+const URL ='http://192.168.10.166:3000/'
+ $.ajax({
+ 	url:URL+'goods',
+ 	type:'get',
+ 	dataType:'json',
+ 	success:function(data){
+ 		// console.log(data)
+ 	 var str ='';
+ 	 $.each(data,function(k,v){
+ 	   str +="<li class='mui-table-view-cell mui-media'>"
+           +"<a href='javascript:;'>"
+           +"<img class='mui-media-object mui-pull-left' src="+v.image+">"
+           +"<div class='mui-media-body'>"
+           +v.name+"<p class='mui-ellipsis'>"
+           +v.number+"</p>"
+           +"<p class='mui-ellipsis'>"
+           +v.detail+"</p>"
+           +"</div>"
+           +"</a>"
+           +"</li>"
+ 	 })
+ 	 $(".mui-table-view").html(str);
+ 	}
+ })
+</script>
+</html>
